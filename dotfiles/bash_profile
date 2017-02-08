@@ -22,8 +22,9 @@ alias qfind="find . -name "
 alias psg="ps -ef | grep "
 
 ## path alias
-alias work="~/work/git/"
-alias stuff="~/stuff/"
+alias go_work="cd ~/work/"
+alias go_stuff="cd ~/stuff/"
+alias go_git="go_work; cd git"
 
 ## Kill DS Store files
 find ~ -name ".DS_Store" -delete

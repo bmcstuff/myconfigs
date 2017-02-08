@@ -4,7 +4,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 ## session vars
-export PS1="[\u]:/\W:> "
+#export PS1="[\u]:/\W:> "
 export PATH="$PATH:/usr/local/bin"
 export GERRIT_USER="bw-brian-cella"
 export AWS_DEFAULT_REGION=us-east-1
@@ -21,13 +21,18 @@ alias c='clear'
 alias qfind="find . -name "
 alias psg="ps -ef | grep "
 
-## work alias
-alias work="cd ~/work"
+## path alias
+alias work="~/work/git/"
+alias stuff="~/stuff/"
 
-
-## AWS
-#HOLO_ENV="017 Admin"
- 
 ## Kill DS Store files
 find ~ -name ".DS_Store" -delete
 
+## Color/Font
+BOLD='\e[1m'
+RESET='\e[0m'
+CYAN='\e[1;36m'
+RED='\e[1;31m'
+BLUE='\e[1;34m'
+## Prompt
+export PS1="\n${CYAN}\D{%Y-%m-%d %H:%M:%S}${RESET} at ${BOLD}\!${RESET} as ${RED}\u@\H${RESET} in ${BLUE} \w ${RESET} \n# "

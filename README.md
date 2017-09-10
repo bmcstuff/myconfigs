@@ -1,2 +1,2 @@
 # myconfigs
-My misc configs worth keeping
+Misc configs worth keeping

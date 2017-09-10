@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "window.menuBarVisibility": "default",
+    "workbench.colorTheme": "Atom One Dark"
+    "python.pythonPath": "C:\\Program Files\\Python36\\python.exe"
+    "editor.renderWhitespace": "all"
+    //"python.pythonPath": "C:\\Python27\\python.exe"
+}
